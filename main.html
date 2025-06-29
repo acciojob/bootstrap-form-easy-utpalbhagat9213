@@ -16,27 +16,27 @@
 		<div class="row">
 			<div class="col-md-4">
 				<label for="first-name-input">First Name:</label><br>
-				<input type="text" id="first-name-input">
+				<input type="text" id="first-name-input" class="form-control">
 			</div>
 			<div class="col-md-4">
-				<label for="last-name-input">Last Name:</label><br>
+				<label for="last-name-input" class="form-control">Last Name:</label><br>
 				<input type="text" id="last-name-input">
 			</div>
 			<div class="col-md-4">
-				<label for="email">Email Address:</label><br>
-				<input type="email" id="email">
+				<label for="email-input">Email Address:</label><br>
+				<input type="email" id="email-input" class="form-control">
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-4">
 				<label for="college-input">college:</label><br>
-				<input type="text" id="college-input">
+				<input type="text" id="college-input" class="form-control">
 			</div>
 			<div class="col-md-4">
 			<label>Graduation Year:</label><br>
 
-				<select>
+				<select class="form-select">
 					<option>Choose...</option>
 					<option value="2020">2020</option>
 					<option value="2021">2021</option>
@@ -46,10 +46,10 @@
 			</div>
 			<div class="col-md-4">
 				<label for="roll-no-input">Roll No:</label><br>
-				<input type="text" id="roll-no-input">
+				<input type="text" id="roll-no-input" class="form-control">
 			</div>
 		</div>
-			<input type="checkbox" id="conditions-checkbox">
+			<input type="checkbox" id="conditions-checkbox" class="form-check-input">
 				    <label for="conditions-checkbox">Agree Terms and Conditions</label>
 <br>
 		<input style="background-color:blue;" type="button" value="Submit Form">
@@ -59,42 +59,51 @@
 		<div class="row">
 			<div class="col-md-4">
 				<label for="first-name-input">First Name:</label><br>
-				<input type="text" id="first-name-input" required>
+				<input type="text" id="first-name-input" class="form-control" required>
+			  <div class="invalid-feedback">Please fill out this field.</div>
 			</div>
 			<div class="col-md-4">
 				<label for="last-name-input">Last Name:</label><br>
-				<input type="text" id="last-name-input" required>
+				<input type="text" id="last-name-input" class="form-control" required>
+			  <div class="invalid-feedback">Please fill out this field.</div>
 			</div>
 			<div class="col-md-4">
-				<label for="email">Email Address:</label><br>
-				<input type="email" id="email" required>
+				<label for="email-input">Email Address:</label><br>
+				<input type="email" id="email-input" class="form-control" required>
+			  <div class="invalid-feedback">Please fill out this field.</div>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-md-4">
 				<label for="college-input">college:</label><br>
-				<input type="text" id="college-input" required>
+				<input type="text" id="college-input"class="form-control" required>
+			  <div class="invalid-feedback">Please fill out this field.</div>
 			</div>
 			<div class="col-md-4">
-			<label>Graduation Year:</label><br>
+			<label for="grad-year-select">Graduation Year:</label><br>
 
-				<select required>
+				<select id="grad-year-select"  class="form-select" required>
 					<option>Choose...</option>
 					<option value="2020">2020</option>
 					<option value="2021">2021</option>
 					<option value="2022">2022</option>
 					<option value="2023">2023</option>
 				</select>
+				  <div class="invalid-feedback">Please fill out this field.</div>
 			</div>
 			<div class="col-md-4">
 				<label for="roll-no-input">Roll No:</label><br>
-				<input type="text" id="roll-no-input" required>
+				<input type="text" id="roll-no-input" class="form-control" required>
+			  <div class="invalid-feedback">Please fill out this field.</div>
 			</div>
 		</div>
-			<input type="checkbox" id="conditions-checkbox" required>
+		<div>
+			<input type="checkbox" id="conditions-checkbox" class="form-check-input" required>
 				    <label for="conditions-checkbox">Agree Terms and Conditions</label>
-<br>
+  <div class="invalid-feedback">Please fill out this field.</div>
+		</div>
+			<br>
 		<input style="background-color:blue;" type="button" value="Submit Form">
 	</form>
 	
