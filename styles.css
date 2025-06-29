@@ -1,2 +1,7 @@
 
 /* Your CSS Code here. */
+form{
+	border:2px;
+	margin:1px;
+	padding:40px;
+}
